@@ -8,7 +8,6 @@ html, body {
     width: 100%;
 }
 .form-container {
-    /* height: 100vh; */
     width: 100%;
     background-color: #edeff2;
     display: flex;
@@ -18,7 +17,6 @@ html, body {
     gap: 1.5rem; 
 }
 .main-header {
-    /* border: 1px solid black; */
     border-radius: 10px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem 0 2rem 0;
@@ -30,10 +28,8 @@ html, body {
     color: #564bbf;
 }
 .main-form {
-    /* border: 1px solid black; */
     border-radius: 10px;
     width: 60%;
-    /* height: 80%; */
     overflow: hidden;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
 }
@@ -54,9 +50,16 @@ html, body {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-    border: 1px solid black;
 }
-
+input, select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #7e8286;
+    margin-top: 8px;
+}
+label {
+    font-size: 1.2rem;
+}
 .names-filed {
     display: flex;
     justify-content: space-between;
@@ -65,7 +68,7 @@ html, body {
 .names {
     flex: 1;
 }
-input, select{
+.names-filed input {
     width: 100%;
 }
 .dobSelect{
@@ -73,22 +76,117 @@ input, select{
     justify-content: space-between;
     gap: 20px;
 }
-
+.dateOfBirth select{
+    width: 100%;
+}
 .contect {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-
+.contect input {
+    width: 100%;
+}
 
 textarea {
     resize: none;
     width: 100%;
+    padding: 8px;
+}
+.gander, .course {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.gander-fileds, .course-input {
+    display: flex;
+    gap: 18px;
+}
+.country select{
+    width: 100%;
+}
+.full-address {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.address-field {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.address {
+    flex: 1;
+}
+.address input {
+    width: 100%;
 }
 
+.hobbies-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+.hobbies-input label {
+    width: 30%;
+    margin-top: 8px;
+}
+.qualification {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.form-table {
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+th {
+    background-color: #fafcfc;
+    color: #7e8286
+}
+th, td {
+    padding: 16px;
+    text-align: center;
+}
+
+table input {
+    width: 90%;
+    padding: 8px;
+    border: 1px solid #7e8286;
+}
+
+
+.form-button {
+    border-top: 1px solid #7e8286;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+.form-button button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+}
+.form-button button[type="submit"] {
+    color: #f5f8ff;
+    background: linear-gradient(to right, #DE49AAFF, #AD54E8FF); 
+    
+}
+.form-button button[type="reset"] {
+    background-color: #fff;;
+}
 .main-footer {
-    border: 1px solid black;
-    padding: 10px 0 10px 0;
     width: 60%;
     text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0 2rem 0;
+    width: 60%;
+    background-color: #f5f8ff;
+}
+.main-footer h2 {
+    color: #158b65;
 }

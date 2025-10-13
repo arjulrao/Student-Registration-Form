@@ -22,7 +22,6 @@
                         <div class="names-filed">
                             <div class="names">
                                 <label for="firstName">First Name </label>
-                              
                                <input type="text" id="firstName" name="firstName" required placeholder="Enter Your First Name..">
                             </div>
                             <div class="names">
@@ -87,24 +86,34 @@
                     </div>    
                     <div class="gander">
                         <label for="gander">Gander</label>
-                        <br>
-                        <label><input type="radio" name="gander" value="female"> Male</label>
-                        <label><input type="radio" name="gander" value="female"> Female</label>
+                       <div class="gander-fileds">
+                            <label><input type="radio" name="gander" value="female"> Male</label>
+                            <label><input type="radio" name="gander" value="female"> Female</label>
+                       </div>
                     </div>
 
-                    <div class="full=address">
+                    <div class="full-address">
                         <label for="address">Address</label>
-                        <br>
-                        <textarea name="full-address" id="full-address" rows="5"></textarea>
+                        <div>
+                            <textarea name="full-address" id="full-address" rows="5" placeholder="Enter Your address"></textarea>
+                        </div>
                     </div>
-                    <div class="address">
-                        <label for="city">City</label>
-                        <label for="pincode">Pin Code</label>
-                        <label for="state">State</label>
-                        <br>
-                        <input type="text" name="city" id="city" placeholder="city" required>
-                        <input type="text" name="city" id="pincode" placeholder="Enter Pin Code" required>
-                        <input type="text" name="state" id="state" placeholder="Enter State" required>
+                    <div class="address-field">
+                        <div class="address">
+                            <label for="city">City</label>
+                            <input type="text" name="city" id="city" placeholder="City" required>
+                        </div>
+                        
+                        <div class="address">
+                            <label for="pincode">Pin Code</label>
+                            <input type="text" name="city" id="pincode" placeholder="Enter Pin Code" required>
+                        </div>
+                        
+                        <div class="address">
+                            <label for="state">State</label>
+                            <input type="text" name="state" id="state" placeholder="Enter State" required>
+                        </div>    
+                        
                     </div>
                     <div class="country">
                         <label for="country">Country</label>
@@ -119,18 +128,19 @@
                     </div>
                     <div class="hobbies">
                         <label for="hobbies">Hobbies</label>
-                        <br>
-                        <label><input type="checkbox" id="hobbies" name="hobbies" value="drawing"> Drawing</label>
-                        <label><input type="checkbox" id="hobbies" name="hobbies" value="singing"> Singing</label>
-                        <label><input type="checkbox" id="hobbies" name="hobbies" value="dancing"> Dancing</label>
-                        <label><input type="checkbox" id="hobbies" name="hobbies" value="sketching">Sketching</label>
-                        <label><input type="checkbox" id="hobbies" name="hobbies" value="others">Others</label>
+                        <div class="hobbies-input">
+                            <label><input type="checkbox" id="hobbies" name="hobbies" value="drawing"> Drawing</label>
+                            <label><input type="checkbox" id="hobbies" name="hobbies" value="singing"> Singing</label>
+                            <label><input type="checkbox" id="hobbies" name="hobbies" value="dancing"> Dancing</label>
+                            <label><input type="checkbox" id="hobbies" name="hobbies" value="sketching"> Sketching</label>
+                            <label><input type="checkbox" id="hobbies" name="hobbies" value="others"> Others</label>
+                        </div>  
                     </div>
 
                     <div class="qualification">
                         <label for="qualification">Qualification</label>
                         <div class="qualification-details">
-                            <table>
+                            <table class="form-table">
                                 <thead>
                                     <tr>
                                         <th>Sr. No. </th>
@@ -139,7 +149,7 @@
                                         <th>Percentage</th>
                                         <th>Year of passing</th>	
                                     </tr>
-                                </thead>    
+                                </thead>
                                 <tbody>
                                     <tr>
                                         <td>1</td>
@@ -176,14 +186,15 @@
 
                     <div class="course">
                         <label for="courses">Courses Applied For</label>
-                        <br>
-                            <label> <input type="radio" name="courses" id="courses"> BCA</label>
-                            <label> <input type="radio" name="courses" id="courses"> B.Com</label>
-                            <label> <input type="radio" name="courses" id="courses"> B.Sc</label>
-                            <label> <input type="radio" name="courses" id="courses"> B.A </label>
+                            <div class="course-input">
+                                <label> <input type="radio" name="courses" id="courses"> BCA</label>
+                                <label> <input type="radio" name="courses" id="courses"> B.Com</label>
+                                <label> <input type="radio" name="courses" id="courses"> B.Sc</label>
+                                <label> <input type="radio" name="courses" id="courses"> B.A </label>
+                            </div>
                     </div>
 
-                    <div class="formend">
+                    <div class="form-button">
                         <button type="reset">Reset</button>
                         <button type="submit">Submit</button>
                     </div>
