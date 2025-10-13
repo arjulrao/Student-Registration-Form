@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <header class="main-header">
+            <h2>Modern Registration Form</h2>
+        </header>
+        <main class="main-form">
+            <div class="form-head">
+                <h1>Student Registration Form</h1>
+            </div>
+          
+                <form>
+                    <div class="form-body">
+
+                        <div class="names-filed">
+                            <div class="names">
+                                <label for="firstName">First Name </label>
+                              
+                               <input type="text" id="firstName" name="firstName" required placeholder="Enter Your First Name..">
+                            </div>
+                            <div class="names">
+                                <label for="lastName">Last Name</label>
+                              
+                                <input type="text" name="lastName" id="lastName" required placeholder="Enter Your Last Name..">
+                            </div>            
+                        </div>
+                       
+                        
+                        <div class="dateOfBirth">
+                            <div class="dobLabel">
+                                <label for="DateOfBirth">Date of Birth</label>
+                            </div>
+                            <div class="dobSelect">
+                            <select name="day" id="day" required>
+                                <option value="">Day</option>
+                                <script>
+                                    for(let i=1; i<=31; i++){
+                                    document.write(`<option value="${i}">${i}</option>`)
+                                }
+                            </script>
+                            </select>
+
+                            <select name="month" id="month" required>
+                                <option value="">Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+
+                            <select id="year" name="year" required>
+                                <option value="">Year</option>
+                                <script>
+                                const currentYear = new Date().getFullYear();
+                                for (let i = currentYear; i >= 1900; i--) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                                }
+                                </script>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="contect">
+                        <div contect-field>
+                            <label for="email">Email ID</label>
+                            <input type="email" placeholder="Enter your Email">
+                        </div>
+                        <div contect-field>
+                            <label for="mobile">Mobile Number</label>
+                            <input type="tel" name="mobile" id="mobile" name="usrtel" pattern="[0-9]{3} [0-9]{3} [0-9]{4} " maxlength="10" placeholder="987 654 3210">
+                        </div>
+                    </div>    
+                    <div class="gander">
+                        <label for="gander">Gander</label>
+                        <br>
+                        <label><input type="radio" name="gander" value="female"> Male</label>
+                        <label><input type="radio" name="gander" value="female"> Female</label>
+                    </div>
+
+                    <div class="full=address">
+                        <label for="address">Address</label>
+                        <br>
+                        <textarea name="full-address" id="full-address" rows="5"></textarea>
+                    </div>
+                    <div class="address">
+                        <label for="city">City</label>
+                        <label for="pincode">Pin Code</label>
+                        <label for="state">State</label>
+                        <br>
+                        <input type="text" name="city" id="city" placeholder="city" required>
+                        <input type="text" name="city" id="pincode" placeholder="Enter Pin Code" required>
+                        <input type="text" name="state" id="state" placeholder="Enter State" required>
+                    </div>
+                    <div class="country">
+                        <label for="country">Country</label>
+                        <br>
+                        <select name="country" id="country">
+                            <option value="">Select Country</option>
+                            <option>India</option>
+                            <option>USA</option>
+                            <option>Dubai</option>
+                            <option>England</option>
+                        </select>
+                    </div>
+                    <div class="hobbies">
+                        <label for="hobbies">Hobbies</label>
+                        <br>
+                        <label><input type="checkbox" id="hobbies" name="hobbies" value="drawing"> Drawing</label>
+                        <label><input type="checkbox" id="hobbies" name="hobbies" value="singing"> Singing</label>
+                        <label><input type="checkbox" id="hobbies" name="hobbies" value="dancing"> Dancing</label>
+                        <label><input type="checkbox" id="hobbies" name="hobbies" value="sketching">Sketching</label>
+                        <label><input type="checkbox" id="hobbies" name="hobbies" value="others">Others</label>
+                    </div>
+
+                    <div class="qualification">
+                        <label for="qualification">Qualification</label>
+                        <div class="qualification-details">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Sr. No. </th>
+                                        <th>Examination </th>
+                                        <th>Board</th>
+                                        <th>Percentage</th>
+                                        <th>Year of passing</th>	
+                                    </tr>
+                                </thead>    
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Class X</td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Class XII </td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Graduation </td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Masters </td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                        <td><input type="text"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="course">
+                        <label for="courses">Courses Applied For</label>
+                        <br>
+                            <label> <input type="radio" name="courses" id="courses"> BCA</label>
+                            <label> <input type="radio" name="courses" id="courses"> B.Com</label>
+                            <label> <input type="radio" name="courses" id="courses"> B.Sc</label>
+                            <label> <input type="radio" name="courses" id="courses"> B.A </label>
+                    </div>
+
+                    <div class="formend">
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>    
+                </form>
+        </main>
+        <footer class="main-footer">
+            <h2>Professional Registration Form</h2>
+        </footer>
+    </div>
+</body>
+</html>
