@@ -83,6 +83,13 @@
                             <label for="mobile">Mobile Number</label>
                             <input type="tel" name="mobile" id="mobile" name="usrtel" pattern="[0-9]{3} [0-9]{3} [0-9]{4} " maxlength="10" placeholder="987 654 3210">
                         </div>
+                        <script>
+                            const phoneInput = document.getElementById('mobile');
+                                phoneInput.addEventListener('input', (event) => {
+                                event.target.value = event.target.value.replace(/[^0-9+\-() ]/g, ''); 
+                            });
+                        </script>
+       
                     </div>    
                     <div class="gander">
                         <label for="gander">Gander</label>
