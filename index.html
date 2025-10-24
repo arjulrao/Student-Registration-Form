@@ -73,24 +73,24 @@
                             </select>
                         </div>
                     </div>
-                    
-                    <div class="contect">
-                        <div contect-field>
+        
+                    <div class="contect-field">
+                        <div class="contect">
                             <label for="email">Email ID</label>
                             <input type="email" placeholder="Enter your Email" required>
                         </div>
-                        <div contect-field>
+                        <div class="contect">
                             <label for="mobile">Mobile Number</label>
-                            <input type="tel" name="mobile" id="mobile" name="usrtel" pattern="[0-9]{3} [0-9]{3} [0-9]{4} " maxlength="10" placeholder="987 654 3210" required>
-                        </div>
+                            <input type="tel" name="mobile" id="mobile" name="usrtel" pattern="[0-9]{3} [0-9]{3} [0-9]{4} " maxlength="10" placeholder="987 654 3210" required>        
+                        </div>   
                         <script>
                             const phoneInput = document.getElementById('mobile');
                                 phoneInput.addEventListener('input', (event) => {
                                 event.target.value = event.target.value.replace(/[^0-9+\-() ]/g, ''); 
                             });
-                        </script>
-       
-                    </div>    
+                        </script>         
+                    </div>
+
                     <div class="gander">
                         <label for="gander">Gander</label>
                        <div class="gander-fileds">
@@ -113,7 +113,7 @@
                         
                         <div class="address">
                             <label for="pincode">Pin Code</label>
-                            <input type="text" name="city" id="pincode" placeholder="Enter Pin Code" required>
+                            <input type="number" name="city" id="pincode" placeholder="Enter Pin Code" required>
                         </div>
                         
                         <div class="address">
@@ -162,29 +162,29 @@
                                         <td>1</td>
                                         <td>Class X</td>
                                         <td><input type="text"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Class XII </td>
                                         <td><input type="text"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Graduation </td>
                                         <td><input type="text"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>Masters </td>
                                         <td><input type="text"></td>
-                                        <td><input type="number"></td>
-                                        <td><input type="number"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
+                                        <td><input type="number" min="0" max="100" maxlength="2" pattern="\d{1,2}"></td>
                                     </tr>
                                 </tbody>
                             </table>

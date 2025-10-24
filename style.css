@@ -60,15 +60,15 @@ input, select {
 label {
     font-size: 1.2rem;
 }
-.names-filed {
+.names-filed, .contect-field {
     display: flex;
     justify-content: space-between;
     gap: 20px;
 }
-.names {
+.names, .contect{
     flex: 1;
 }
-.names-filed input {
+.names-filed input, .contect-field input {
     width: 100%;
 }
 .dobSelect{
@@ -77,14 +77,6 @@ label {
     gap: 20px;
 }
 .dateOfBirth select{
-    width: 100%;
-}
-.contect {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-.contect input {
     width: 100%;
 }
 
